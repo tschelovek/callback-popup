@@ -1,0 +1,80 @@
+.callback-popup.callback {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.callback-popup.callback .callback__btn-wrapper {
+  position: relative;
+  z-index: 100;
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open {
+  position: relative;
+  border: none;
+  width: 60px;
+  height: 60px;
+  background-color: #E00001;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 8px 1px #333333;
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open .icon_open_amv, .callback-popup.callback .callback__btn-wrapper .callback__btn_open .icon_close_amv {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: opacity 0.2s, transform 0.3s;
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open .icon_open_amv {
+  opacity: 1;
+  transform: scale(1);
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open .icon_close_amv {
+  opacity: 0;
+  transform: scale(0.1);
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open.active {
+  background-color: white;
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open.active .icon_open_amv {
+  opacity: 0;
+  transform: scale(0.1);
+}
+.callback-popup.callback .callback__btn-wrapper .callback__btn_open.active .icon_close_amv {
+  opacity: 1;
+  transform: scale(1);
+}
+.callback-popup.callback .callback__modal-wrapper {
+  position: relative;
+}
+.callback-popup.callback .modal-popup {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  max-width: 450px;
+  min-width: 360px;
+  padding: 32px;
+  width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.2s, transform 0.3s ease-in-out;
+  box-shadow: 2px 2px 8px 0 #333333;
+}
+.callback-popup.callback .modal-popup.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 360px) {
+  .callback-popup.callback .modal-popup {
+    min-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
