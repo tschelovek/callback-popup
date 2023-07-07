@@ -1,0 +1,19 @@
+{
+  "name": "a3t_components",
+  "version": "1.0.0",
+  "description": "my components and another usefull stuff",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tschelovek/callback-popup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tschelovek/callback-popup/issues"
+  },
+  "homepage": "https://github.com/tschelovek/callback-popup#readme"
+}
